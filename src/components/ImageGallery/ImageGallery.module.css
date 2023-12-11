@@ -1,0 +1,11 @@
+.ImageGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 50px;
+    margin-left: 50px;
+}

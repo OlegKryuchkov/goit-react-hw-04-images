@@ -1,0 +1,28 @@
+.BtnContainer {
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ButtonLoader {
+    width: 150px;
+    height: 50px;
+    background-color: #6f73a3;
+    color: white;
+    cursor: pointer;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 5px 5px 6px #c5c5c5, -3px -3px 6px #d4d4d4;
+}
+
+.ButtonLoader:hover,
+.ButtonLoader:focus {
+    scale: 1.05;
+    transition: 300ms;
+}
