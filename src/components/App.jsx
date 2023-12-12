@@ -58,11 +58,13 @@ const App = () => {
     setTags(tags);
   };
 
-  const getValue = ({ name }) => {
-    setHits([]);
-    setName(name);
-    setPage(1);
-    setTotalHits(0);
+  const getValue = ({ name }, newName) => {
+    if (newName !== name) {
+      setHits([]);
+      setName(name);
+      setPage(1);
+      setTotalHits(0);
+    }
   };
 
   const loadMore = () => {
