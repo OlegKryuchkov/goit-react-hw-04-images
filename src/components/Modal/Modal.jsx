@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './Modal.module.css';
 
-const Modal = ({ onClick, tags, largeImageURL }) => {
+const Modal = ({ onClick, url, alt }) => {
   useEffect(() => {
     const handleKeyDown = event => {
       if (event.code === 'Escape') {
@@ -25,7 +25,7 @@ const Modal = ({ onClick, tags, largeImageURL }) => {
   return (
     <div className={styles.Overlay} onClick={handleBackdpropClick}>
       <div className={styles.Modal}>
-        <img src={largeImageURL} alt={tags} />
+        <img src={url} alt={alt} />
       </div>
     </div>
   );
