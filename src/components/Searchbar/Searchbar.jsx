@@ -18,7 +18,7 @@ const Searchbar = ({ onSubmitHandler }) => {
       return;
     }
 
-    onSubmitHandler({ name });
+    onSubmitHandler(name);
 
     reset();
   };

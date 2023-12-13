@@ -58,10 +58,10 @@ const App = () => {
     setTags(tags);
   };
 
-  const getValue = ({ name }, newName) => {
-    if (newName !== name) {
+  const getValue = query => {
+    if (query !== name) {
       setHits([]);
-      setName(name);
+      setName(query);
       setPage(1);
       setTotalHits(0);
     }
@@ -82,7 +82,7 @@ const App = () => {
       )}
 
       {showModal && (
-        <Modal onClose={toggleModal} url={largeImageURL} alt={tags} />
+        <Modal onClick={toggleModal} url={largeImageURL} alt={tags} />
       )}
 
       {loading && <SpinnerLoader />}
